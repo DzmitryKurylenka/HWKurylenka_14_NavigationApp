@@ -56,15 +56,39 @@
 		0494A9BB2A92D56E00F4712A /* HWKurylenka_14_NavigationApp */ = {
 			isa = PBXGroup;
 			children = (
-				0494A9BC2A92D56E00F4712A /* AppDelegate.swift */,
-				0494A9BE2A92D56E00F4712A /* SceneDelegate.swift */,
-				0494A9C02A92D56E00F4712A /* ViewController.swift */,
-				0494A9C22A92D56E00F4712A /* Main.storyboard */,
+				0494A9D12A92D66F00F4712A /* Controllers */,
+				0494A9D22A92D68600F4712A /* Views */,
 				0494A9C52A92D57000F4712A /* Assets.xcassets */,
-				0494A9C72A92D57000F4712A /* LaunchScreen.storyboard */,
 				0494A9CA2A92D57000F4712A /* Info.plist */,
+				0494A9D02A92D62200F4712A /* AppDelegate */,
 			);
 			path = HWKurylenka_14_NavigationApp;
+			sourceTree = "<group>";
+		};
+		0494A9D02A92D62200F4712A /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				0494A9BC2A92D56E00F4712A /* AppDelegate.swift */,
+				0494A9BE2A92D56E00F4712A /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		0494A9D12A92D66F00F4712A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0494A9C02A92D56E00F4712A /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		0494A9D22A92D68600F4712A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0494A9C22A92D56E00F4712A /* Main.storyboard */,
+				0494A9C72A92D57000F4712A /* LaunchScreen.storyboard */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -302,9 +326,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "dzmitrykurylenka.HWKurylenka-14-NavigationApp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -330,9 +357,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "dzmitrykurylenka.HWKurylenka-14-NavigationApp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
