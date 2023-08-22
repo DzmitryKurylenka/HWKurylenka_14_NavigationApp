@@ -41,10 +41,6 @@ class FirstVC: UIViewController {
     }
     
     
-    @IBAction func goToFourthWithSegue() {
-        
-    }
-    
     // передача данных назад с помощью обратной сеги unwind
     @IBAction func unwindToFirstVC(_ unwindSegue: UIStoryboardSegue) {
         if let fouthVC = unwindSegue.source as? FourthVC {
@@ -62,11 +58,15 @@ class FirstVC: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "goToSecondVC",
            let secondVC = segue.destination as? SecondVC,
-           let dataString = sender as? String {
+           let dataString = sender as? String
+        {
             secondVC.dataString = dataString
             secondVC.firstVC = self // это и есть указатель, указывающий на себя
+        } else if segue.identifier == "goToFourthVC",
+            let secondVC = segue.destination as? FourthVC
+        {
+            secondVC.dataString = "Hi from FirstVC"
         }
     }
     
-
 }

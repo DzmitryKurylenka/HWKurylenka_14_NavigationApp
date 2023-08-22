@@ -239,7 +239,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Go to VC by separated storyboard with segue and send Data"/>
                                         <connections>
-                                            <action selector="goToFourthWithSegue" destination="LzA-Z7-X5o" eventType="touchUpInside" id="zxE-Wg-bkQ"/>
+                                            <segue destination="9cY-QY-zWg" kind="show" identifier="goToFourthVC" id="xOa-JL-tbY"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -272,6 +272,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6e7-ID-ZXI" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-306" y="1536"/>
+        </scene>
+        <!--secondStoryboard-->
+        <scene sceneID="yVa-rl-a4d">
+            <objects>
+                <viewControllerPlaceholder storyboardName="secondStoryboard" id="9cY-QY-zWg" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="zcJ-dW-Hin"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jif-Ur-ogu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="300" y="1827"/>
         </scene>
         <!--SecondVC-->
         <scene sceneID="NeO-8S-CkX">
@@ -313,7 +323,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kuh-Hh-Ea7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="564" y="1536"/>
+            <point key="canvasLocation" x="476" y="1392"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="QHN-4O-3Ni">
